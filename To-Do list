@@ -1,0 +1,23 @@
+# todo.py
+todos = []
+
+def add_todo():
+    todo = input("Enter a new todo: ")
+    todos.append(todo)
+    print(f"Added: {todo}")
+
+def show_todos():
+    print("Your todos:")
+    for i, todo in enumerate(todos, 1):
+        print(f"{i}. {todo}")
+
+while True:
+    action = input("Type 'add' to add a todo or 'show' to display todos (or 'exit' to quit): ")
+    if action == 'add':
+        add_todo()
+    elif action == 'show':
+        show_todos()
+    elif action == 'exit':
+        break
+    else:
+        print("Invalid action")
