@@ -1,0 +1,8 @@
+# currency_converter.py
+def convert_currency(amount, exchange_rate):
+    return amount * exchange_rate
+
+amount = float(input("Enter amount in USD: "))
+exchange_rate = 0.85  # Example: USD to EUR
+converted_amount = convert_currency(amount, exchange_rate)
+print(f"Converted amount in EUR: {converted_amount:.2f}")
